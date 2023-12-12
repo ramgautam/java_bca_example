@@ -2,12 +2,14 @@ package edu.ncit.demo.operator;
 
 public class FibonniSeries {
     public static void main(String args[]) {
-        int count = 10;
+        int count = 4;
         int counter=1;
-        while (counter <= count) {
-            System.out.println(fib(counter));
-            count++;
-        }
+        //System.out.println("series"+ fib(count));
+        displayFibooniSeries(count);
+//        while (counter <= count) {
+//            System.out.println(fib(counter));
+//            count++;
+//        }
     }
     static int fib(int n)
     {
@@ -20,10 +22,10 @@ public class FibonniSeries {
         int counter = 1;
         int sum = 0;
         if (count == 0) {
-            System.out.println("0,");
+            System.out.print("0,");
         }
         while (counter <= count) {
-            System.out.println(sum + counter);
+            System.out.print(sum + counter);
             count++;
         }
     }
