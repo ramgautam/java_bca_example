@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="062c80e5-78d6-4abd-8cf4-d70f3c7f599f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter1_basic/src/edu/ncit/demo/ObjectArray/Bicycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter1_basic/src/edu/ncit/demo/ObjectArray/CycleHanding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter1_basic/src/edu/ncit/demo/operator/CalculateInterest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter1_basic/src/edu/ncit/demo/operator/CalculateInterestUsingArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter1_basic/src/edu/ncit/demo/operator/DiplayPrimeNumberOneToHundredUsingBoolean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter1_basic/src/edu/ncit/demo/operator/DisplayOneToHundredPrimeNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter1_basic/src/edu/ncit/demo/operator/DisplaySumOneToHundredWithOddAndEven.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter1_basic/src/edu/ncit/demo/operator/ModuloOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter1_basic/src/edu/ncit/demo/operator/SumOfEvenAndOddUsingArrays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter1_basic/src/edu/ncit/demo/operator/SumOneToHundred.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_bca_example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java_bca_example.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +25,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/ramgautam/Downloads/JAVA_CLASS/java_bca_example/chapter1_basic/src/edu/ncit/demo/operator"
+    "last_opened_file_path": "/Users/ramgautam/Downloads/JAVA_CLASS/java_bca_example/chapter1_basic/src/edu/ncit/demo/polymorphism"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/chapter1_basic/src/edu/ncit/demo/polymorphism" />
       <recent name="$PROJECT_DIR$/chapter1_basic/src/edu/ncit/demo/operator" />
       <recent name="$PROJECT_DIR$/chapter1_basic/src/edu/ncit/demo/condition" />
       <recent name="$PROJECT_DIR$/chapter1_basic/src/edu/ncit/demo" />
@@ -78,11 +66,39 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702384018658</updated>
-      <workItem from="1702384020555" duration="959000" />
+      <workItem from="1702384020555" duration="2309000" />
     </task>
+    <task id="LOCAL-00001" summary="test commit">
+      <created>1702386311178</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702386311178</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="test commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/chapter1_basic/src/edu/ncit/demo/operator/FibonniSeries.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/chapter1_basic/src/edu/ncit/demo/operator/FibonniSeries.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
