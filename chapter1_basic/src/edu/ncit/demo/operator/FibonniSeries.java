@@ -2,7 +2,7 @@ package edu.ncit.demo.operator;
 
 public class FibonniSeries {
     public static void main(String args[]) {
-        int count = 4;
+        int count = 10;
         int counter=1;
         //System.out.println("series"+ fib(count));
         displayFibooniSeries(count);
@@ -19,14 +19,16 @@ public class FibonniSeries {
     }
 
     public static void displayFibooniSeries(int count) {
-        int counter = 1;
-        int sum = 0;
-        if (count == 0) {
-            System.out.print("0,");
-        }
-        while (counter <= count) {
-            System.out.print(sum + counter);
-            count++;
+        int firstTerm = 0, secondTerm = 1;
+        System.out.println("Fibonacci Series till " + count + " terms:");
+
+        for (int i = 1; i <= count; ++i) {
+            System.out.print(firstTerm + ", ");
+
+            // compute the next term
+            int nextTerm = firstTerm + secondTerm;
+            firstTerm = secondTerm;
+            secondTerm = nextTerm;
         }
     }
 }
