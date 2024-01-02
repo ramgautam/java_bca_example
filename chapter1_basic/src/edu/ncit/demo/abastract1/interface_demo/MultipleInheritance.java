@@ -1,5 +1,7 @@
 package edu.ncit.demo.abastract1.interface_demo;
 
+import java.sql.SQLOutput;
+
 /* Declare the interfaces  */
 interface Walkable {
     void walk();
@@ -9,6 +11,27 @@ interface Swimmable {
     void swim();
 }
 
+interface Runnable {
+    void run();
+}
+
+class Human implements Walkable,Swimmable,Runnable{
+
+    @Override
+    public void walk() {
+        System.out.println("Human can walk");
+    }
+
+    @Override
+    public void swim() {
+        System.out.println("Human can swim");
+    }
+
+    @Override
+    public void run() {
+        System.out.println("Human can run");
+    }
+}
 // Implement the interfaces in a class
 class Duck implements Walkable, Swimmable {
     public void walk()
@@ -29,5 +52,10 @@ public class MultipleInheritance {
         Duck duck = new Duck();
         duck.walk();
         duck.swim();
+
+        Human human= new Human();
+        human.run();
+        human.walk();
+        human.swim();
     }
 }
