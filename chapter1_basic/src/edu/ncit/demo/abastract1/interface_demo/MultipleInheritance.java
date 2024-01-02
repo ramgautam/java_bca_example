@@ -1,6 +1,6 @@
 package edu.ncit.demo.abastract1.interface_demo;
 
-import java.sql.SQLOutput;
+
 
 /* Declare the interfaces  */
 interface Walkable {
