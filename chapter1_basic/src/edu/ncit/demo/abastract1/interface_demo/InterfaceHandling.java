@@ -19,5 +19,8 @@ class InterfaceHandling {
 	public static void main(String[] args) {
 		Bank b = new SBI();
 		System.out.println("ROI: " + b.rateOfInterest());
+
+		b = new PNB();
+		System.out.println(" PNB ROI"+ b.rateOfInterest());
 	}
 }
