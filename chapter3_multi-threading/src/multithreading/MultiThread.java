@@ -1,4 +1,4 @@
-package edu.ncit.demo.multithreading;
+package multithreading;
 
 public class MultiThread {
 

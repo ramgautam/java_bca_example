@@ -1,4 +1,4 @@
-package edu.ncit.demo.multithreading;
+package multithreading;
 
 import java.util.Date;
 
@@ -30,6 +30,7 @@ class Display extends Thread {
 	Display(){
 		super("my extending thread");
 		System.out.println("my thread created::" + this.toString());
+		this.setPriority(Thread.MAX_PRIORITY);
 		start();
 	}
 
