@@ -1,4 +1,4 @@
-package multithreading;
+package multithreading.runnable_interface;
 
 public class RunnableExample {
 	
