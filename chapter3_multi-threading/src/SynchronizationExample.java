@@ -18,6 +18,7 @@ class Counter {
 
     // Synchronized method to increment the counter
     public synchronized void increment() {
+        System.out.println("in synchronized incrementing::"+ Thread.currentThread().getName());
         System.out.println("in synchronized increment");
         System.out.println("before counter increment ::"+ count);
         count++;
@@ -37,7 +38,8 @@ class IncrementThread extends Thread {
     }
 
     public void run() {
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 100; i++) {
+            System.out.println("which thread ::"+Thread.currentThread().getName());
             counter.increment();
         }
     }
@@ -53,6 +55,10 @@ public class SynchronizationExample {
         thread1.start();
         thread2.start();
 
+        thread1.setName("first thread");
+        thread2.setName("second thread");
+
+        // Wait for both threads to complete
         thread1.join();
         thread2.join();
 
