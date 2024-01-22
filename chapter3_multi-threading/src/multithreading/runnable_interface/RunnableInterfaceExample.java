@@ -1,5 +1,4 @@
 package multithreading.runnable_interface;
-
 class MyRunnable implements Runnable {
     @Override
     public void run() {
