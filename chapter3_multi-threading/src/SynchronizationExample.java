@@ -18,6 +18,7 @@ class Counter {
 
     // Synchronized method to increment the counter
     public synchronized void increment() {
+        //  // Critical section
         System.out.println("in synchronized incrementing::"+ Thread.currentThread().getName());
         System.out.println("in synchronized increment");
         System.out.println("before counter increment ::"+ count);

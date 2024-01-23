@@ -5,8 +5,8 @@ class PriorityThread extends Thread {
 }
 public class PriorityExample {
     public static void main(String args[]) {
-        MyThread t1 = new MyThread();
-        MyThread t2 = new MyThread();
+        PriorityThread t1 = new PriorityThread();
+        PriorityThread t2 = new PriorityThread();
         // Set priority to the minimum
         t2.setName("high priority thread");
         t1.setName("low priority thread");
