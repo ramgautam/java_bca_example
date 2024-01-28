@@ -5,6 +5,7 @@ public class BasicGUIProgram {
     private JButton button;
     private JLabel label;
 
+    private JTextField fullNameTextField;
     public BasicGUIProgram() {
         frame = new JFrame("Basic GUI Program"); // Create a new JFrame
         frame.pack();
@@ -12,8 +13,12 @@ public class BasicGUIProgram {
 
         label = new JLabel("test label");
 
+        fullNameTextField= new JTextField();
+        fullNameTextField.setText("test");
+
 
         label.setBounds(30, 50, 100, 10);
+        fullNameTextField.setBounds(40,70,100,20);
 
         // Set the size and layout of the frame
         frame.setSize(300, 200);
@@ -23,6 +28,8 @@ public class BasicGUIProgram {
         // Set the size and position of the button
         button.setBounds(100, 50, 100, 30);
         button.setToolTipText("test tool tips text");
+
+        frame.add(fullNameTextField);
 
         frame.add(label);
         // Add the button to the frame
