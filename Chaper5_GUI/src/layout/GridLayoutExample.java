@@ -1,8 +1,10 @@
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import java.awt.GridLayout;
+package layout;
+
+import javax.swing.*;
+import java.awt.*;
 
 public class GridLayoutExample {
+
     public static void main(String[] args) {
         JFrame frame = new JFrame("Grid Layout Example");
 
