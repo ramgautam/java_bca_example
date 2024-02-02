@@ -13,9 +13,11 @@ public class TeacherService {
         try {
             Connection conn = new DatabaseHelper().getConnection();
             Statement stmt = conn.createStatement();
-            String sql = "INSERT INTO Teacher (TchId, TchName, TchAdd, TchPhone) VALUES " +
-                    "('" + teacherModel.getTeacherId() + "', '" + teacherModel.getTeacherName()
+            String sql = "INSERT INTO teacher (teacher_id, teacher_name, teacher_address, teacher_phone) VALUES " +
+                    "(" + teacherModel.getTeacherId() + ", '" + teacherModel.getTeacherName()
                     + "', '" + teacherModel.getTeacherAddress() + "', '" + teacherModel.getTeacherPhone() + "')";
+
+            System.out.println("sql::"+ sql);
             stmt.executeUpdate(sql);
             stmt.close();
             conn.close();
@@ -25,13 +27,14 @@ public class TeacherService {
     }
 
     public List<TeacherModel> getAllTeachers() throws SQLException {
+        List<TeacherModel> teacherModelList = new ArrayList<>();
         try {
             // Connect to the database
             Connection conn = new DatabaseHelper().getConnection();
             // Execute a query to fetch teacher details
             Statement stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM teachers");
-            List<TeacherModel> teacherModelList = new ArrayList<>();
+            ResultSet rs = stmt.executeQuery("SELECT * FROM teacher");
+
 
             // Populate the table with fetched data
             while (rs.next()) {
@@ -51,6 +54,6 @@ public class TeacherService {
         } catch (SQLException ex) {
             throw ex;
         }
-        return null;
+        return teacherModelList ;
     }
 }
