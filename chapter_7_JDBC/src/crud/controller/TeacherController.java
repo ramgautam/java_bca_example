@@ -29,6 +29,7 @@ public class TeacherController {
 
             try {
                 service.addTeacher(model);
+                view.displayTeachers(service.getAllTeachers());
                 view.displayMessage("Teacher information added successfully.");
             } catch (SQLException ex) {
                 view.displayMessage("Error: " + ex.getMessage());
