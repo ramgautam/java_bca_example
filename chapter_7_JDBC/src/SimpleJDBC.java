@@ -33,7 +33,7 @@ public class SimpleJDBC {
             while (resultSet.next()) {
                 // Retrieve data from each row
                 int id = resultSet.getInt("teacher_id");
-                String name = resultSet.getString("teacher_name");
+                int name = resultSet.getInt("teacher_name");
                 String address = resultSet.getString("teacher_address");
                 String phone = resultSet.getString("teacher_phone");
 
@@ -41,13 +41,11 @@ public class SimpleJDBC {
                 System.out.println("ID: " + id + ", Name: " + name + ", Address: " + address + ", Phone: " + phone);
             }
 
-            // Clean-up
+            // STEP -6 Clean-up
             resultSet.close();
             statement.close();
             conn.close();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
+        }  catch (Exception e) {
             e.printStackTrace();
         }
     }
