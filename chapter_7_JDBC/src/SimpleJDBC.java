@@ -3,7 +3,6 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 
 public class SimpleJDBC {
@@ -13,8 +12,9 @@ public class SimpleJDBC {
         String user = "root";
         String password = "mysql";
 
+        int teacher_id=1;
         // SQL query
-        String query = "SELECT * FROM teacher";
+        String query = "SELECT * FROM teacher where teacher_id="+teacher_id;
 
         try {
             // STEP -2 Register JDBC driver
@@ -33,7 +33,7 @@ public class SimpleJDBC {
             while (resultSet.next()) {
                 // Retrieve data from each row
                 int id = resultSet.getInt("teacher_id");
-                int name = resultSet.getInt("teacher_name");
+                String name = resultSet.getString("teacher_name");
                 String address = resultSet.getString("teacher_address");
                 String phone = resultSet.getString("teacher_phone");
 
