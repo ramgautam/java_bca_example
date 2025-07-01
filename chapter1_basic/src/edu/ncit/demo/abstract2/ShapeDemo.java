@@ -81,6 +81,9 @@ public class ShapeDemo {
     public static void main(String[] args) {
         // Creating instances of different shapes
         Circle circle = new Circle(5);
+        //This can be also possible to Super class object can hold/reference the Sub class reference
+        //Shape shape = new Circle(5);
+
         Rectangle rectangle = new Rectangle(4, 6);
         Triangle triangle = new Triangle(3, 4, 5);
 
