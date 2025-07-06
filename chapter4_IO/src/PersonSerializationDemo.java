@@ -4,35 +4,22 @@ import java.util.Objects;
 
 /**
  * Explanation:
- *
  *     Person Class:
- *
  *         Implements Serializable to allow object serialization
- *
  *         Contains three fields: name, age, and address
- *
  *         Has a parameterized constructor that initializes all fields
- *
  *         Includes a toString() method for string representation
- *
  *         Uses Objects.requireNonNull() for null checks
  *
  *     Serialization (Writing to file):
- *
  *         Creates an ObjectOutputStream wrapped around a FileOutputStream
- *
- *         Writes the Person object to "person.dat" file using writeObject()
- *
+ *          Writes the Person object to "person.dat" file using writeObject()
  *         Prints the original object for verification
  *
  *     Deserialization (Reading from file):
- *
  *         Creates an ObjectInputStream wrapped around a FileInputStream
- *
  *         Reads the Person object from "person.dat" using readObject()
- *
  *         Casts the returned Object to Person type
- *
  *         Prints the deserialized object
  */
 class Person implements Serializable {
@@ -83,7 +70,7 @@ public class PersonSerializationDemo {
             ois = new ObjectInputStream(new FileInputStream(filePath));
             Person deserializedPerson = (Person) ois.readObject();
             System.out.println("\nPerson object read from file successfully.");
-            System.out.println("Deserialized object: " + deserializedPerson);
+            System.out.println("Deserialized object: " + deserializedPerson.toString());
         } catch (IOException | ClassNotFoundException e) {
             System.err.println("Error reading object from file: " + e.getMessage());
         } finally {
