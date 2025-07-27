@@ -3,14 +3,16 @@ class SharedResource {
 
     public void increment() {
         // Non-critical section
+        //other logics
 
-        synchronized (this) {
+        synchronized(this){
             // Critical section
             counter++;
             System.out.println(Thread.currentThread().getName() + " - Incremented Counter: " + counter);
         }
 
         // Non-critical section
+        //other logics
     }
 
     public int getCounter() {

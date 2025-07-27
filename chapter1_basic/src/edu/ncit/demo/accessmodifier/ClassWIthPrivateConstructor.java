@@ -5,18 +5,20 @@ public class ClassWIthPrivateConstructor {
 	private String name;
 	private int id;
 	
-//	private ClassWIthPrivateConstructor() {
-//		id=0;
-//		name="";
-//	}
+	 ClassWIthPrivateConstructor() {
+		id=0;
+		name="";
+		intializePrivateDataMember();
+	}
 	
-	public void intializePrivateDataMember() {
+	private void intializePrivateDataMember() {
 		this.id=10;
 		this.name="20";
 		
 	}
 	
 	public void displayPrivateDataMember() {
+		 intializePrivateDataMember();
 		System.out.println("name"+name);
 		System.out.println("id"+id);
 		

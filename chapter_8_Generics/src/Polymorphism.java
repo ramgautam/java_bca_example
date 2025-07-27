@@ -58,6 +58,8 @@ public class Polymorphism {
         // Calculating and printing areas
         System.out.println("Area of rectangle: " + rectangleCalculator.calculateArea());
         System.out.println("Area of circle: " + circleCalculator.calculateArea());
+        System.gc();
+        Runtime runtime = Runtime.getRuntime();
     }
 }
 

@@ -18,12 +18,15 @@ public class MouseEventExample extends JFrame implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
+
         JOptionPane.showMessageDialog(this, "Mouse Clicked");
     }
 
     @Override
     public void mousePressed(MouseEvent e) {
         // Not used in this example
+        JOptionPane.showMessageDialog(this, "Mouse Pressed");
+
     }
 
     @Override

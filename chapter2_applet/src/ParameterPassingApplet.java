@@ -10,6 +10,7 @@ public class ParameterPassingApplet extends Applet {
         if (message == null) {
             message = "No message provided";
         }
+        System.out.println("message from Aplet viewer"+ message);
     }
 
     public void paint(Graphics g) {

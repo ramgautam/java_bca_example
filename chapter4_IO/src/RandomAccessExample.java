@@ -3,7 +3,7 @@ import java.io.IOException;
 
 public class RandomAccessExample {
     public static void main(String[] args) {
-        String filePath = "downloaded_file_2.txt";
+        String filePath = "/Users/ramgautam/JAVA_BCA/downloaded_file_1.txt";
 
         try (RandomAccessFile randomAccessFile = new RandomAccessFile(filePath, "r")) {
             // Move the file pointer to the 10th byte

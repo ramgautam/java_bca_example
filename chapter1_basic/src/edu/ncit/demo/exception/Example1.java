@@ -1,9 +1,16 @@
 package edu.ncit.demo.exception;
 
+import static java.lang.System.exit;
+
 class Example1 {
 	   public static void main(String args[]) {
 	      int num1, num2;
+
+
+
 	      try {
+
+			 // exit(0);
 	         /* We suspect that this block of statement can throw 
 	          * exception so we handled it by placing these statements
 	          * inside try and handled the exception in catch block
@@ -12,6 +19,7 @@ class Example1 {
 	         num2 = 62 / num1;
 	         System.out.println(num2);
 	         System.out.println("Hey I'm at the end of try block");
+			  return;
 	      }
 	      catch (ArithmeticException e) { 
 	         /* This block will only execute if any Arithmetic exception 
@@ -26,6 +34,9 @@ class Example1 {
 	          */
 	         System.out.println("Exception occurred");
 	      }
-	      System.out.println("I'm out of try-catch block in Java.");
+		  finally{
+			  System.out.println("finally I'm out of try-catch block in Java.");
+		   }
+
 	   }
 	}
