@@ -29,9 +29,9 @@ class Person implements Serializable {
     private String address;
 
     public Person(String name, int age, String address) {
-        this.name = Objects.requireNonNull(name, "Name cannot be null");
+        this.name = name;
         this.age = age;
-        this.address = Objects.requireNonNull(address, "Address cannot be null");
+        this.address = address;
     }
 
     @Override
@@ -49,7 +49,7 @@ public class PersonSerializationDemo {
         ObjectOutputStream oos = null;
         try {
             oos = new ObjectOutputStream(new FileOutputStream(filePath));
-            oos.writeObject(person);
+            oos.writeObject(person.toString());
             System.out.println("Person object written to file successfully.");
             System.out.println("Original object: " + person);
         } catch (IOException e) {
