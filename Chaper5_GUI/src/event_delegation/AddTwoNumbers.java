@@ -48,6 +48,7 @@ public class AddTwoNumbers extends JFrame implements ActionListener {
         addButton.addActionListener(this); // register ActionListener
         add(addButton);
 
+        setSize(250,120);
         setVisible(true);
     }
 
