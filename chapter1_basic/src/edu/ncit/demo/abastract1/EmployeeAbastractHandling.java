@@ -7,6 +7,7 @@ public class EmployeeAbastractHandling {
 		//Drawable d=new Circle();//In real scenario, object is provided by method e.g. getDrawable()
 		//mployee employee= new Employee() ;
 		Employee fullTimeEmployee = new FullTimeEmployee("full time employee", 8);
+		fullTimeEmployee.toString();
 
 		System.out.println(contractor.calculateSalary());
 		System.out.println(fullTimeEmployee.calculateSalary());

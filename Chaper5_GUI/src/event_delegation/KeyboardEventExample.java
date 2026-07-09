@@ -21,10 +21,10 @@ public class KeyboardEventExample extends JFrame {
                     String text = textField.getText();
                     JOptionPane.showMessageDialog(KeyboardEventExample.this, "You entered: " + text);
                 }
-//                if (keyCode == KeyEvent.VK_SPACE) {
-//                    String text = textField.getText();
-//                    JOptionPane.showMessageDialog(KeyboardEventExample.this, "Space bar keyboard pressed");
-//                }
+                if (keyCode == KeyEvent.VK_SPACE) {
+                    String text = textField.getText();
+                    JOptionPane.showMessageDialog(KeyboardEventExample.this, "Space bar keyboard pressed");
+                }
             }
         });
     }

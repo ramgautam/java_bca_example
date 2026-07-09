@@ -17,7 +17,7 @@ class Task extends Thread {
 
     public void run() {
         for (int a = 1; a < 1000; a++)
-            System.out.println("Numbers " + a);
+            System.out.println("Thread Name :"+ Thread.currentThread().getName()+"Numbers " + a);
         try {
 
             Thread.sleep(10);

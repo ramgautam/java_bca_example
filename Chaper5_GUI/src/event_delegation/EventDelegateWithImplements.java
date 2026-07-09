@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 
 public class EventDelegateWithImplements implements ActionListener {
     private JButton button;
+    private JButton button1;
 
     public EventDelegateWithImplements() {
         // Create a JFrame
@@ -14,12 +15,16 @@ public class EventDelegateWithImplements implements ActionListener {
 
         // Create a JButton
         button = new JButton("Click Me");
+        button1 = new JButton("Next Button");
 
         // Register this ActionListener with the button
         button.addActionListener(this);
+        button1.addActionListener(this);
 
+        frame.setLayout(new FlowLayout());
         // Add the button to the frame
-        frame.getContentPane().add(button, BorderLayout.CENTER);
+        frame.getContentPane().add(button);
+        frame.getContentPane().add(button1);
 
         // Set frame properties
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -35,6 +40,11 @@ public class EventDelegateWithImplements implements ActionListener {
             // Show a message dialog when the button is clicked
             JOptionPane.showMessageDialog(null, "Button Clicked!");
             System.out.println("Button clicked!");
+        }
+        if (e.getSource() == button1) {
+            // Show a message dialog when the button is clicked
+            JOptionPane.showMessageDialog(null, "Button1 Clicked!");
+            System.out.println("Button1 clicked!");
         }
     }
 

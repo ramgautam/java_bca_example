@@ -11,19 +11,23 @@ public class ExceptionExample {
 	public static void main(String[] args) {
 	
 		try {
-			
-			int[] myIntArray = new int[] { 1, 2, 3 };// 0,1,2
-			
-			int number =10/0;
-			
-			print4thItemInArray(myIntArray);
-			
+
+			int[] myIntArray = new int[]{1, 2, 3};// 0,1,2
+//
+//			int number = 10 / 0;
+			String name="ram";
+			System.out.println(name.toUpperCase());
+
+			//print4thItemInArray(myIntArray);
+			System.out.println("number 0 index "+ myIntArray[0]);
+			System.out.println("numbern 3"+ myIntArray[3]);
+
 			//convertStringToInteger("abc");
-			
+
 			///
-			
-		} catch (IOException e) {
-			System.out.println("IOException");
+
+		} catch (NullPointerException e) {
+			System.out.println("NullPointerException");
 		}
 		catch (ArrayIndexOutOfBoundsException ex) {
 			System.out.println("The array doesn't have four items!");
